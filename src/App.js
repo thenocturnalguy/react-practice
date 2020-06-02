@@ -1,11 +1,14 @@
 import React, { Component, Fragment } from "react";
+import Student from "./Student.js";
 
 class App extends Component {
 	render() {
 		return (
 			<Fragment>
-				<h1>Hello World! This is Rahul.</h1>
-				<p>I'm an Amateur React Developer.</p>
+				<Student name="Rahul" lang="Angular" />
+				<Student name="Arion" lang="React"/>
+				<Student name="Avishek" lang="Python"/>
+				<h2 style={{margin: 10}}>{this.props.children}</h2>
 			</Fragment>
 		);
 	}
