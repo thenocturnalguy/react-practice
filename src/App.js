@@ -5,12 +5,14 @@ class App extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Student name="Rahul" lang="Angular" />
-				<Student name="Arion" lang="React"/>
-				<Student name="Avishek" lang="Python"/>
+				<Student name="Rahul" age={22} lang="Angular" />
 				<h2 style={{margin: 10}}>{this.props.children}</h2>
 			</Fragment>
 		);
+	}
+
+	componentWillUnmount() {
+		console.log("ComponentWillUnmount is now getting called..");
 	}
 }
 
